@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 
@@ -56,6 +57,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 		db.execSQL(CREATE_PROVINCE);
 		db.execSQL(CREATE_CITY);
 		db.execSQL(CREATE_COUNTY);
+		Log.d("TAG", "´´½¨±í");
 	}
 
 	@Override
